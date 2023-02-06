@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#08AD7F"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+      android:layout_marginTop="128dp"
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="Email"
+        android:padding="8dp" />
+
+    <EditText
+
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_email"
+        android:background="#fff"
+        android:hint="Senha"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_password"
+        android:backgroundTint="#DADADA"
+        android:text="Login"
+        android:textColor="#08DA7F"/>
+
+    <TextView
+        android:id="@+id/text_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Ainda não é cadastraddo ? Cadastre-se"
+        android:textColor="#FFF"
+        android:layout_below="@+id/button_login"
+        android:layout_margin="20sp"/>
+
+    <ImageView
+        android:id="@+id/image_support"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/baseline_question_mark_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/image_support"
+        android:gravity="center"
+        android:text="Esqueceu a senha ?"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
